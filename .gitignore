@@ -1,0 +1,125 @@
+# ==============================================================================
+# AlphaPortfolio - Git Ignore Rules
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Backend
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/__pycache__/
+backend/*/__pycache__/
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+conda/
+
+# Unit Tests & Coverage
+.cache
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# ------------------------------------------------------------------------------
+# Node.js & React Frontend (Vite)
+# ------------------------------------------------------------------------------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Linters / Cache
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# ------------------------------------------------------------------------------
+# Datasets & Heavy Files
+# ------------------------------------------------------------------------------
+# The 'Final dataset' folder contains files >100MB (e.g. SP500_Historical_Data.csv ~142MB)
+# which exceed GitHub's upload limits.
+Final dataset/
+*.tar.gz
+*.zip
+*.parquet
+*.h5
+*.hdf5
+
+# Keep the lightweight sample datasets tracked in git
+!datasets/
+
+# ------------------------------------------------------------------------------
+# OS & Editor Artifacts
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# IDEs & Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
